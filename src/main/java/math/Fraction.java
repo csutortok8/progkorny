@@ -88,7 +88,6 @@ public class Fraction extends Number implements Cloneable {
 	 * @return a fraction that represents the result
 	 */
 	public Fraction multiply(int n) {
-		// TODO
 		return null;
 	}
 
@@ -145,8 +144,12 @@ public class Fraction extends Number implements Cloneable {
 	 * @throws ArithmeticException if the parameter {@code fraction} is zero
 	 */
 	public Fraction divide(Fraction fraction) throws ArithmeticException {
-		// TODO
-		return null;
+		Fraction recip = new Fraction(fraction.getDenominator(), fraction.getNumerator());
+		Fraction res = null;
+		if(recip.getNumerator() != 0)
+			res = new Fraction(recip.getNumerator()*numerator, recip.getDenominator()*denominator);
+	
+		return res;
 	}
 
 	/**

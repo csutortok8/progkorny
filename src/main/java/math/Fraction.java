@@ -147,7 +147,7 @@ public class Fraction extends Number implements Cloneable {
 	public Fraction divide(Fraction fraction) throws ArithmeticException {
 		Fraction recip = new Fraction(fraction.getDenominator(), fraction.getNumerator());
 		Fraction res = null;
-		if(recip.getNumerator() != 0)
+		if(recip.getDenominator() != 0)
 			res = new Fraction(recip.getNumerator()*numerator, recip.getDenominator()*denominator);
 	
 		return res;

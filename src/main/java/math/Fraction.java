@@ -198,8 +198,8 @@ public class Fraction extends Number implements Cloneable {
 	 * @return the value of this fraction as a {@code double}
 	 */
 	public double doubleValue() {
-		// TODO
-		return 0;
+		return (double)(numerator/denominator);
+		
 	}
 
 	/**

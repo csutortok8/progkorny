@@ -208,7 +208,7 @@ public class Fraction extends Number implements Cloneable {
 	 * @return the value of this fraction as a {@code float}
 	 */
 	public float floatValue() {
-		return (float)numerator/(float)denominator;
+		return (float)(numerator/(float)denominator);
 	}
 
 	/**
@@ -218,7 +218,7 @@ public class Fraction extends Number implements Cloneable {
 	 */
 	public long longValue() {
 		// TODO
-		return 0;
+		return (long)(numerator/(float)denominator);
 	}
 
 	/**

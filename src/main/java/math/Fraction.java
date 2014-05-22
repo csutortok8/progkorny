@@ -157,8 +157,7 @@ public class Fraction extends Number implements Cloneable {
 	 * @return a fraction that represents the result
 	 */
 	public Fraction multiply(Fraction fraction) {
-		// TODO
-		return null;
+		return new Fraction(numerator*fraction.numerator,denominator*fraction.denominator);
 	}
 
 	/**
@@ -167,8 +166,7 @@ public class Fraction extends Number implements Cloneable {
 	 * @return a fraction that represents the reciprocal of this fraction
 	 */
 	public Fraction reciprocal() {
-		// TODO
-		return null;
+		return new Fraction(denominator,numerator);
 	}
 
 	/**
